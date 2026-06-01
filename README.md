@@ -8,3 +8,8 @@ Minimal Streamlit app with:
 
 ```bash
 streamlit run app.py
+```
+
+
+## link to the online project
+[text](https://hb-financialdashboard.streamlit.app/)
