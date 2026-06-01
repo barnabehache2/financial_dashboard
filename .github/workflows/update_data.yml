@@ -3,6 +3,7 @@ name: Update crypto data
 on:
   schedule:
     - cron: "0 */4 * * *"
+      timezone: "Europe/Paris"
   workflow_dispatch:
 
 permissions:
