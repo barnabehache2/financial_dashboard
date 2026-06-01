@@ -1,0 +1,33 @@
+name: Update crypto data
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"   # toutes les 4 heures
+  workflow_dispatch:        # lancement manuel
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run fetch script
+        run: python scripts/fetch_data.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/
+          git commit -m "update crypto data (auto)" || echo "no changes"
+          git push
