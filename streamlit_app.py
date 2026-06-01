@@ -26,7 +26,6 @@ TIMEFRAME_MAP = {
 # ----------------------------
 # Helpers
 # ----------------------------
-@st.cache_data(show_spinner=False)
 def load_asset_data(asset: str, timeframe: str) -> pd.DataFrame:
     """
     Load parquet file for one asset and one timeframe.
