@@ -1,0 +1,47 @@
+name: Update crypto predictions
+
+on:
+  workflow_run:
+    workflows: ["Update crypto data"]
+    types:
+      - completed
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-predictions:
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Kronos dependencies
+        run: pip install -r requirements-kronos.txt
+
+      - name: Run Kronos predictions
+        run: |
+          python scripts/predict_kronos.py \
+            --input-dir data/raw \
+            --output-dir data/predictions \
+            --lookback 360 \
+            --pred-len 24 \
+            --n-paths 20
+
+      - name: Commit and push predictions
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add data/predictions/
+          git commit -m "update crypto predictions (auto)" || echo "no changes"
+          git push
