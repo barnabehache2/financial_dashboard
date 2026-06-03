@@ -29,14 +29,14 @@ TIMEFRAME_MAP = {
 # ----------------------------
 def load_asset_data(file_path: str, file_mtime: float) -> pd.DataFrame:
     df = pd.read_parquet(file_path).copy()
-    df["open_time"] = pd.to_datetime(df["open_time"])
+    df["open_time"] = pd.to_datetime(df["open_time"], utc=True)
     df = df.sort_values("open_time").reset_index(drop=True)
     return df
 
 
 def load_prediction_data(file_path: str, file_mtime: float) -> pd.DataFrame:
     df = pd.read_parquet(file_path).copy()
-    df["timestamp"] = pd.to_datetime(df["timestamp"])
+    df["timestamp"] = pd.to_datetime(df["timestamp"], utc=True)
     if "path_id" in df.columns:
         df["path_id"] = pd.to_numeric(df["path_id"], errors="coerce")
     df = df.sort_values(["timestamp", "path_id"]).reset_index(drop=True)
@@ -225,15 +225,15 @@ if not min_dates or not max_dates:
     st.error("Aucune donnée trouvée pour la combinaison asset/timeframe sélectionnée.")
     st.stop()
 
-global_min_date = min(min_dates).date()
-global_max_date = max(max_dates).date()
+global_min_dt = min(min_dates)
+global_max_dt = max(max_dates)
 
 st.sidebar.subheader("Date range")
 date_range = st.sidebar.slider(
     "Select dates",
-    min_value=global_min_date,
-    max_value=global_max_date,
-    value=(global_min_date, global_max_date),
+    min_value=global_min_dt.to_pydatetime(),
+    max_value=global_max_dt.to_pydatetime(),
+    value=(global_min_dt.to_pydatetime(), global_max_dt.to_pydatetime()),
 )
 
 start_date = pd.Timestamp(date_range[0], tz="UTC")
