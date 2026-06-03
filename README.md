@@ -12,4 +12,4 @@ streamlit run app.py
 
 
 ## link to the online project
-[Project link](https://hb-financialdashboard.streamlit.app/)
+[Project link](https://bh-financialdashboard.streamlit.app/)
