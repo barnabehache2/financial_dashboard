@@ -1,0 +1,33 @@
+{
+  "asset": "ADA",
+  "timeframe": "1d",
+  "computed_at": "2026-06-03T20:34:38.305900+00:00",
+  "last_close": 0.2079,
+  "pred_len": 20,
+  "forecast_start": "2026-06-04 00:00:00+00:00",
+  "forecast_end": "2026-06-23 00:00:00+00:00",
+  "metrics": {
+    "n_paths": 5,
+    "mean_final_price": 0.265719,
+    "std_final_price": 0.013726,
+    "sharpness": 0.051657,
+    "expected_return": 0.278108,
+    "std_return": 0.066023,
+    "signal_sharpe": 4.2123,
+    "direction_prob": 1.0,
+    "upside": 0.278108,
+    "downside": 0.0,
+    "risk_reward": NaN,
+    "best_case_p95": 0.377785,
+    "worst_case_p5": 0.216672,
+    "conviction": 0.4834
+  },
+  "signals": {
+    "entry": "neutral",
+    "entry_reason": "high dispersion across paths (sharpness=0.052)",
+    "stay_long": "stay_long",
+    "stay_long_reason": "forecast still supportive: expected return 27.81%, 100% bullish paths",
+    "stay_short": "exit_short",
+    "stay_short_reason": "model now expects positive return (27.81%) \u2014 close short"
+  }
+}

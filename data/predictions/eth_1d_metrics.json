@@ -1,0 +1,33 @@
+{
+  "asset": "ETH",
+  "timeframe": "1d",
+  "computed_at": "2026-06-03T20:35:59.889748+00:00",
+  "last_close": 1824.97,
+  "pred_len": 20,
+  "forecast_start": "2026-06-04 00:00:00+00:00",
+  "forecast_end": "2026-06-23 00:00:00+00:00",
+  "metrics": {
+    "n_paths": 5,
+    "mean_final_price": 2448.36333,
+    "std_final_price": 161.28346,
+    "sharpness": 0.065874,
+    "expected_return": 0.341591,
+    "std_return": 0.088376,
+    "signal_sharpe": 3.8652,
+    "direction_prob": 1.0,
+    "upside": 0.341591,
+    "downside": 0.0,
+    "risk_reward": NaN,
+    "best_case_p95": 0.448811,
+    "worst_case_p5": 0.230988,
+    "conviction": 0.3413
+  },
+  "signals": {
+    "entry": "neutral",
+    "entry_reason": "high dispersion across paths (sharpness=0.066); conviction too low (0.34)",
+    "stay_long": "stay_long",
+    "stay_long_reason": "forecast still supportive: expected return 34.16%, 100% bullish paths",
+    "stay_short": "exit_short",
+    "stay_short_reason": "model now expects positive return (34.16%) \u2014 close short"
+  }
+}

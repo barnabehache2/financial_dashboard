@@ -1,0 +1,33 @@
+{
+  "asset": "XRP",
+  "timeframe": "1d",
+  "computed_at": "2026-06-03T20:36:26.205189+00:00",
+  "last_close": 1.2159,
+  "pred_len": 20,
+  "forecast_start": "2026-06-04 00:00:00+00:00",
+  "forecast_end": "2026-06-23 00:00:00+00:00",
+  "metrics": {
+    "n_paths": 5,
+    "mean_final_price": 1.702021,
+    "std_final_price": 0.177564,
+    "sharpness": 0.104325,
+    "expected_return": 0.399803,
+    "std_return": 0.146035,
+    "signal_sharpe": 2.7377,
+    "direction_prob": 1.0,
+    "upside": 0.399803,
+    "downside": 0.0,
+    "risk_reward": NaN,
+    "best_case_p95": 0.622437,
+    "worst_case_p5": 0.274655,
+    "conviction": 0.0
+  },
+  "signals": {
+    "entry": "neutral",
+    "entry_reason": "high dispersion across paths (sharpness=0.104); conviction too low (0.00)",
+    "stay_long": "stay_long",
+    "stay_long_reason": "forecast still supportive: expected return 39.98%, 100% bullish paths",
+    "stay_short": "exit_short",
+    "stay_short_reason": "model now expects positive return (39.98%) \u2014 close short"
+  }
+}

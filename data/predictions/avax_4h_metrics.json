@@ -1,0 +1,33 @@
+{
+  "asset": "AVAX",
+  "timeframe": "4h",
+  "computed_at": "2026-06-03T20:35:15.751687+00:00",
+  "last_close": 8.093,
+  "pred_len": 20,
+  "forecast_start": "2026-06-03 20:00:00+00:00",
+  "forecast_end": "2026-06-07 00:00:00+00:00",
+  "metrics": {
+    "n_paths": 5,
+    "mean_final_price": 8.19534,
+    "std_final_price": 0.280198,
+    "sharpness": 0.03419,
+    "expected_return": 0.012646,
+    "std_return": 0.034622,
+    "signal_sharpe": 0.3652,
+    "direction_prob": 0.6,
+    "upside": 0.036782,
+    "downside": -0.02356,
+    "risk_reward": 1.5612,
+    "best_case_p95": 0.053038,
+    "worst_case_p5": -0.031061,
+    "conviction": 0.1316
+  },
+  "signals": {
+    "entry": "neutral",
+    "entry_reason": "conviction too low (0.13)",
+    "stay_long": "stay_long",
+    "stay_long_reason": "forecast still supportive: expected return 1.26%, 60% bullish paths",
+    "stay_short": "exit_short",
+    "stay_short_reason": "model now expects positive return (1.26%) \u2014 close short"
+  }
+}
