@@ -27,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Install Kronos dependencies
-        run: pip install -r requirements-kronos.txt
+        run: pip install -r requirements_kronos.txt
 
       - name: Run Kronos predictions
         run: |
