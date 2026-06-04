@@ -339,8 +339,13 @@ PLOTLY_LAYOUT = dict(
         bgcolor="#161b22",
         bordercolor="#30363d",
         borderwidth=1,
+        orientation="h",
+        yanchor="bottom",
+        y=1.02,
+        xanchor="left",
+        x=0,
     ),
-    margin=dict(l=10, r=10, t=50, b=10),
+    margin=dict(l=10, r=10, t=90, b=10),
     height=560,
     hovermode="x unified",
     hoverlabel=dict(
@@ -824,7 +829,7 @@ with st.sidebar:
             selected_assets.append(asset)
 
     st.markdown('<div class="sidebar-section">Predictions</div>', unsafe_allow_html=True)
-    show_predictions = st.toggle("Show Kronos forecast", value=False)
+    show_predictions = st.toggle("Show Kronos forecast", value=True)
 
     st.markdown("---")
     st.markdown(
@@ -891,7 +896,7 @@ def apply_preset(preset: str) -> None:
     st.session_state["dr_end"] = end
 
 if "dr_start" not in st.session_state:
-    apply_preset("Max")
+    apply_preset("1M")
 
 with st.sidebar:
     st.markdown('<div class="sidebar-section">Period</div>', unsafe_allow_html=True)
@@ -1042,9 +1047,7 @@ else:
         height=min(38 * (len(rows) + 1) + 20, 300),
     )
 
-    # Kronos metrics panels — one per selected asset
+    # Kronos metrics panels — stacked vertically
     st.markdown('<div class="divider"></div>', unsafe_allow_html=True)
-    cols = st.columns(len(selected_assets))
-    for col, asset in zip(cols, selected_assets):
-        with col:
-            render_kronos_panel(asset, timeframe)
+    for asset in selected_assets:
+        render_kronos_panel(asset, timeframe)
