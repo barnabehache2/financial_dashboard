@@ -2,7 +2,7 @@
 
 An automated financial dashboard for real-time OHLC visualisation and probabilistic price forecasting across major cryptocurrency assets.
 
-**Live application:** https://bh-financialdashboard.streamlit.app/
+**Live application:** [https://bh-financialdashboard.streamlit.app/](https://financialdashboard-hb.streamlit.app/)
 
 ---
 
