@@ -1,33 +1,33 @@
 {
   "asset": "XRP",
   "timeframe": "4h",
-  "computed_at": "2026-06-05T20:06:08.627625+00:00",
-  "last_close": 1.0974,
+  "computed_at": "2026-06-05T23:19:49.366459+00:00",
+  "last_close": 1.1045,
   "pred_len": 24,
   "forecast_start": "2026-06-06 00:00:00+00:00",
   "forecast_end": "2026-06-09 20:00:00+00:00",
   "metrics": {
     "n_paths": 20,
-    "mean_final_price": 1.193073,
-    "std_final_price": 0.080067,
-    "sharpness": 0.06711,
-    "expected_return": 0.087181,
-    "std_return": 0.07296,
-    "signal_sharpe": 1.1949,
-    "direction_prob": 1.0,
-    "upside": 0.087181,
-    "downside": 0.0,
-    "risk_reward": NaN,
-    "best_case_p95": 0.140843,
-    "worst_case_p5": 0.017397,
-    "conviction": 0.3289
+    "mean_final_price": 1.16166,
+    "std_final_price": 0.057188,
+    "sharpness": 0.04923,
+    "expected_return": 0.051752,
+    "std_return": 0.051778,
+    "signal_sharpe": 0.9995,
+    "direction_prob": 0.9,
+    "upside": 0.058154,
+    "downside": -0.005866,
+    "risk_reward": 9.9134,
+    "best_case_p95": 0.130252,
+    "worst_case_p5": -0.003254,
+    "conviction": 0.4062
   },
   "signals": {
     "entry": "neutral",
-    "entry_reason": "high dispersion across paths (sharpness=0.067); conviction too low (0.33)",
+    "entry_reason": "high dispersion across paths (sharpness=0.049); conviction too low (0.41)",
     "stay_long": "stay_long",
-    "stay_long_reason": "forecast still supportive: expected return 8.72%, 100% bullish paths",
+    "stay_long_reason": "forecast still supportive: expected return 5.18%, 90% bullish paths",
     "stay_short": "exit_short",
-    "stay_short_reason": "model now expects positive return (8.72%) \u2014 close short"
+    "stay_short_reason": "model now expects positive return (5.18%) \u2014 close short"
   }
 }
