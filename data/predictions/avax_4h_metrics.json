@@ -1,33 +1,33 @@
 {
   "asset": "AVAX",
   "timeframe": "4h",
-  "computed_at": "2026-06-06T15:23:10.017177+00:00",
-  "last_close": 6.618,
+  "computed_at": "2026-06-06T23:11:43.303739+00:00",
+  "last_close": 6.662,
   "pred_len": 24,
-  "forecast_start": "2026-06-06 16:00:00+00:00",
-  "forecast_end": "2026-06-10 12:00:00+00:00",
+  "forecast_start": "2026-06-07 00:00:00+00:00",
+  "forecast_end": "2026-06-10 20:00:00+00:00",
   "metrics": {
     "n_paths": 20,
-    "mean_final_price": 7.241448,
-    "std_final_price": 0.402189,
-    "sharpness": 0.05554,
-    "expected_return": 0.094205,
-    "std_return": 0.060772,
-    "signal_sharpe": 1.5501,
+    "mean_final_price": 7.417559,
+    "std_final_price": 0.515427,
+    "sharpness": 0.069487,
+    "expected_return": 0.113413,
+    "std_return": 0.077368,
+    "signal_sharpe": 1.4659,
     "direction_prob": 1.0,
-    "upside": 0.094205,
+    "upside": 0.113413,
     "downside": 0.0,
     "risk_reward": NaN,
-    "best_case_p95": 0.187485,
-    "worst_case_p5": 0.024029,
-    "conviction": 0.4446
+    "best_case_p95": 0.254005,
+    "worst_case_p5": 0.007455,
+    "conviction": 0.3051
   },
   "signals": {
     "entry": "neutral",
-    "entry_reason": "high dispersion across paths (sharpness=0.056); conviction too low (0.44)",
+    "entry_reason": "high dispersion across paths (sharpness=0.069); conviction too low (0.31)",
     "stay_long": "stay_long",
-    "stay_long_reason": "forecast still supportive: expected return 9.42%, 100% bullish paths",
+    "stay_long_reason": "forecast still supportive: expected return 11.34%, 100% bullish paths",
     "stay_short": "exit_short",
-    "stay_short_reason": "model now expects positive return (9.42%) \u2014 close short"
+    "stay_short_reason": "model now expects positive return (11.34%) \u2014 close short"
   }
 }
