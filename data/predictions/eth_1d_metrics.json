@@ -1,33 +1,33 @@
 {
   "asset": "ETH",
   "timeframe": "1d",
-  "computed_at": "2026-06-06T23:12:25.937946+00:00",
-  "last_close": 1563.1,
+  "computed_at": "2026-06-07T06:39:02.225500+00:00",
+  "last_close": 1619.32,
   "pred_len": 24,
-  "forecast_start": "2026-06-07 00:00:00+00:00",
-  "forecast_end": "2026-06-30 00:00:00+00:00",
+  "forecast_start": "2026-06-08 00:00:00+00:00",
+  "forecast_end": "2026-07-01 00:00:00+00:00",
   "metrics": {
     "n_paths": 20,
-    "mean_final_price": 2476.343494,
-    "std_final_price": 245.060798,
-    "sharpness": 0.098961,
-    "expected_return": 0.584251,
-    "std_return": 0.156779,
-    "signal_sharpe": 3.7266,
+    "mean_final_price": 2517.476617,
+    "std_final_price": 295.953704,
+    "sharpness": 0.11756,
+    "expected_return": 0.55465,
+    "std_return": 0.182764,
+    "signal_sharpe": 3.0348,
     "direction_prob": 1.0,
-    "upside": 0.584251,
+    "upside": 0.55465,
     "downside": 0.0,
     "risk_reward": NaN,
-    "best_case_p95": 0.847718,
-    "worst_case_p5": 0.409628,
-    "conviction": 0.0104
+    "best_case_p95": 0.868823,
+    "worst_case_p5": 0.284589,
+    "conviction": 0.0
   },
   "signals": {
     "entry": "neutral",
-    "entry_reason": "high dispersion across paths (sharpness=0.099); conviction too low (0.01)",
+    "entry_reason": "high dispersion across paths (sharpness=0.118); conviction too low (0.00)",
     "stay_long": "stay_long",
-    "stay_long_reason": "forecast still supportive: expected return 58.43%, 100% bullish paths",
+    "stay_long_reason": "forecast still supportive: expected return 55.46%, 100% bullish paths",
     "stay_short": "exit_short",
-    "stay_short_reason": "model now expects positive return (58.43%) \u2014 close short"
+    "stay_short_reason": "model now expects positive return (55.46%) \u2014 close short"
   }
 }
