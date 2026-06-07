@@ -1,33 +1,33 @@
 {
   "asset": "ADA",
   "timeframe": "4h",
-  "computed_at": "2026-06-07T11:55:04.694158+00:00",
-  "last_close": 0.1652,
+  "computed_at": "2026-06-07T15:29:00.176023+00:00",
+  "last_close": 0.1623,
   "pred_len": 24,
-  "forecast_start": "2026-06-07 12:00:00+00:00",
-  "forecast_end": "2026-06-11 08:00:00+00:00",
+  "forecast_start": "2026-06-07 16:00:00+00:00",
+  "forecast_end": "2026-06-11 12:00:00+00:00",
   "metrics": {
     "n_paths": 20,
-    "mean_final_price": 0.168903,
-    "std_final_price": 0.012307,
-    "sharpness": 0.072862,
-    "expected_return": 0.022418,
-    "std_return": 0.074495,
-    "signal_sharpe": 0.3009,
-    "direction_prob": 0.65,
-    "upside": 0.068367,
-    "downside": -0.062918,
-    "risk_reward": 1.0866,
-    "best_case_p95": 0.150905,
-    "worst_case_p5": -0.091825,
-    "conviction": 0.0814
+    "mean_final_price": 0.165527,
+    "std_final_price": 0.015682,
+    "sharpness": 0.094742,
+    "expected_return": 0.019885,
+    "std_return": 0.096626,
+    "signal_sharpe": 0.2058,
+    "direction_prob": 0.5,
+    "upside": 0.101222,
+    "downside": -0.061451,
+    "risk_reward": 1.6472,
+    "best_case_p95": 0.16823,
+    "worst_case_p5": -0.102778,
+    "conviction": 0.0
   },
   "signals": {
     "entry": "neutral",
-    "entry_reason": "high dispersion across paths (sharpness=0.073); conviction too low (0.08)",
+    "entry_reason": "high dispersion across paths (sharpness=0.095); directional probability too close to 50% (50%); conviction too low (0.00)",
     "stay_long": "stay_long",
-    "stay_long_reason": "forecast still supportive: expected return 2.24%, 65% bullish paths",
+    "stay_long_reason": "forecast still supportive: expected return 1.99%, 50% bullish paths",
     "stay_short": "exit_short",
-    "stay_short_reason": "model now expects positive return (2.24%) \u2014 close short"
+    "stay_short_reason": "model now expects positive return (1.99%) \u2014 close short"
   }
 }

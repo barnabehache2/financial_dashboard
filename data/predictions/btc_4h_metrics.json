@@ -1,33 +1,33 @@
 {
   "asset": "BTC",
   "timeframe": "4h",
-  "computed_at": "2026-06-07T11:56:01.259046+00:00",
-  "last_close": 62611.05,
+  "computed_at": "2026-06-07T15:30:11.686628+00:00",
+  "last_close": 61867.11,
   "pred_len": 24,
-  "forecast_start": "2026-06-07 12:00:00+00:00",
-  "forecast_end": "2026-06-11 08:00:00+00:00",
+  "forecast_start": "2026-06-07 16:00:00+00:00",
+  "forecast_end": "2026-06-11 12:00:00+00:00",
   "metrics": {
     "n_paths": 20,
-    "mean_final_price": 65462.058008,
-    "std_final_price": 1682.563087,
-    "sharpness": 0.025703,
-    "expected_return": 0.045535,
-    "std_return": 0.026873,
-    "signal_sharpe": 1.6944,
-    "direction_prob": 0.95,
-    "upside": 0.048642,
-    "downside": -0.013498,
-    "risk_reward": 3.6038,
-    "best_case_p95": 0.082317,
-    "worst_case_p5": 0.012025,
-    "conviction": 0.6687
+    "mean_final_price": 63668.674023,
+    "std_final_price": 2405.620077,
+    "sharpness": 0.037783,
+    "expected_return": 0.02912,
+    "std_return": 0.038884,
+    "signal_sharpe": 0.7489,
+    "direction_prob": 0.9,
+    "upside": 0.039676,
+    "downside": -0.065886,
+    "risk_reward": 0.6022,
+    "best_case_p95": 0.07415,
+    "worst_case_p5": -0.043357,
+    "conviction": 0.4977
   },
   "signals": {
     "entry": "long",
-    "entry_reason": "95% of paths are bullish, expected return +4.55%, conviction 0.67",
+    "entry_reason": "90% of paths are bullish, expected return +2.91%, conviction 0.50",
     "stay_long": "stay_long",
-    "stay_long_reason": "forecast still supportive: expected return 4.55%, 95% bullish paths",
+    "stay_long_reason": "forecast still supportive: expected return 2.91%, 90% bullish paths",
     "stay_short": "exit_short",
-    "stay_short_reason": "model now expects positive return (4.55%) \u2014 close short"
+    "stay_short_reason": "model now expects positive return (2.91%) \u2014 close short"
   }
 }
