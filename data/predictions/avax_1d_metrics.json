@@ -1,33 +1,33 @@
 {
   "asset": "AVAX",
   "timeframe": "1d",
-  "computed_at": "2026-06-09T20:15:15.277452+00:00",
-  "last_close": 6.682,
+  "computed_at": "2026-06-09T23:22:44.821733+00:00",
+  "last_close": 6.641,
   "pred_len": 24,
   "forecast_start": "2026-06-10 00:00:00+00:00",
   "forecast_end": "2026-07-03 00:00:00+00:00",
   "metrics": {
     "n_paths": 20,
-    "mean_final_price": 11.576532,
-    "std_final_price": 2.674402,
-    "sharpness": 0.231019,
-    "expected_return": 0.732495,
-    "std_return": 0.40024,
-    "signal_sharpe": 1.8301,
+    "mean_final_price": 10.629123,
+    "std_final_price": 1.795907,
+    "sharpness": 0.168961,
+    "expected_return": 0.60053,
+    "std_return": 0.270427,
+    "signal_sharpe": 2.2207,
     "direction_prob": 1.0,
-    "upside": 0.732495,
+    "upside": 0.60053,
     "downside": 0.0,
     "risk_reward": NaN,
-    "best_case_p95": 1.547364,
-    "worst_case_p5": 0.324771,
+    "best_case_p95": 1.113027,
+    "worst_case_p5": 0.212057,
     "conviction": 0.0
   },
   "signals": {
     "entry": "neutral",
-    "entry_reason": "high dispersion across paths (sharpness=0.231); conviction too low (0.00)",
+    "entry_reason": "high dispersion across paths (sharpness=0.169); conviction too low (0.00)",
     "stay_long": "stay_long",
-    "stay_long_reason": "forecast still supportive: expected return 73.25%, 100% bullish paths",
+    "stay_long_reason": "forecast still supportive: expected return 60.05%, 100% bullish paths",
     "stay_short": "exit_short",
-    "stay_short_reason": "model now expects positive return (73.25%) \u2014 close short"
+    "stay_short_reason": "model now expects positive return (60.05%) \u2014 close short"
   }
 }
