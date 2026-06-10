@@ -1,33 +1,33 @@
 {
   "asset": "ADA",
   "timeframe": "4h",
-  "computed_at": "2026-06-10T20:39:18.781105+00:00",
+  "computed_at": "2026-06-10T23:41:27.350747+00:00",
   "last_close": 0.1606,
   "pred_len": 24,
   "forecast_start": "2026-06-11 00:00:00+00:00",
   "forecast_end": "2026-06-14 20:00:00+00:00",
   "metrics": {
     "n_paths": 20,
-    "mean_final_price": 0.174592,
-    "std_final_price": 0.004121,
-    "sharpness": 0.023605,
-    "expected_return": 0.087126,
-    "std_return": 0.025661,
-    "signal_sharpe": 3.3952,
+    "mean_final_price": 0.174404,
+    "std_final_price": 0.006761,
+    "sharpness": 0.038765,
+    "expected_return": 0.085954,
+    "std_return": 0.042097,
+    "signal_sharpe": 2.0418,
     "direction_prob": 1.0,
-    "upside": 0.087126,
+    "upside": 0.085954,
     "downside": 0.0,
     "risk_reward": NaN,
-    "best_case_p95": 0.126735,
-    "worst_case_p5": 0.056699,
-    "conviction": 0.764
+    "best_case_p95": 0.15233,
+    "worst_case_p5": 0.038116,
+    "conviction": 0.6123
   },
   "signals": {
     "entry": "long",
-    "entry_reason": "100% of paths are bullish, expected return +8.71%, conviction 0.76",
+    "entry_reason": "100% of paths are bullish, expected return +8.60%, conviction 0.61",
     "stay_long": "stay_long",
-    "stay_long_reason": "forecast still supportive: expected return 8.71%, 100% bullish paths",
+    "stay_long_reason": "forecast still supportive: expected return 8.60%, 100% bullish paths",
     "stay_short": "exit_short",
-    "stay_short_reason": "model now expects positive return (8.71%) \u2014 close short"
+    "stay_short_reason": "model now expects positive return (8.60%) \u2014 close short"
   }
 }
