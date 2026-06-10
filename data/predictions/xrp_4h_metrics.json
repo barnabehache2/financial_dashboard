@@ -1,33 +1,33 @@
 {
   "asset": "XRP",
   "timeframe": "4h",
-  "computed_at": "2026-06-10T06:40:09.927975+00:00",
-  "last_close": 1.1088,
+  "computed_at": "2026-06-10T13:40:46.451689+00:00",
+  "last_close": 1.1262,
   "pred_len": 24,
-  "forecast_start": "2026-06-10 08:00:00+00:00",
-  "forecast_end": "2026-06-14 04:00:00+00:00",
+  "forecast_start": "2026-06-10 16:00:00+00:00",
+  "forecast_end": "2026-06-14 12:00:00+00:00",
   "metrics": {
     "n_paths": 20,
-    "mean_final_price": 1.169927,
-    "std_final_price": 0.037265,
-    "sharpness": 0.031852,
-    "expected_return": 0.055129,
-    "std_return": 0.033608,
-    "signal_sharpe": 1.6404,
-    "direction_prob": 0.95,
-    "upside": 0.060199,
-    "downside": -0.041198,
-    "risk_reward": 1.4612,
-    "best_case_p95": 0.09815,
-    "worst_case_p5": 0.018667,
-    "conviction": 0.6133
+    "mean_final_price": 1.151346,
+    "std_final_price": 0.025312,
+    "sharpness": 0.021985,
+    "expected_return": 0.022328,
+    "std_return": 0.022476,
+    "signal_sharpe": 0.9935,
+    "direction_prob": 0.8,
+    "upside": 0.030198,
+    "downside": -0.009149,
+    "risk_reward": 3.3007,
+    "best_case_p95": 0.068319,
+    "worst_case_p5": -0.012301,
+    "conviction": 0.4681
   },
   "signals": {
     "entry": "long",
-    "entry_reason": "95% of paths are bullish, expected return +5.51%, conviction 0.61",
+    "entry_reason": "80% of paths are bullish, expected return +2.23%, conviction 0.47",
     "stay_long": "stay_long",
-    "stay_long_reason": "forecast still supportive: expected return 5.51%, 95% bullish paths",
+    "stay_long_reason": "forecast still supportive: expected return 2.23%, 80% bullish paths",
     "stay_short": "exit_short",
-    "stay_short_reason": "model now expects positive return (5.51%) \u2014 close short"
+    "stay_short_reason": "model now expects positive return (2.23%) \u2014 close short"
   }
 }
